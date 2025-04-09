@@ -46,6 +46,19 @@ GOOGLE_CLIENT_SECRET: Secret key from Google Cloud Console for OAuth authenticat
 GOOGLE_REDIRECT_URI: The URI where Google redirects after authentication (e.g., http://localhost:5000/api/google-callback).
 AGORA_APP_ID: Unique identifier from Agora for real-time communication features.
 AGORA_APP_CERTIFICATE: Certificate from Agora for generating secure tokens.
+
+FIREBASE_TYPE=service_account
+FIREBASE_PROJECT_ID=
+FIREBASE_PRIVATE_KEY_ID=
+FIREBASE_PRIVATE_KEY=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_CLIENT_ID=
+FIREBASE_AUTH_URI=
+FIREBASE_TOKEN_URI=
+FIREBASE_AUTH_PROVIDER_X509_CERT_URL=
+FIREBASE_CLIENT_X509_CERT_URL=
+FIREBASE_UNIVERSE_DOMAIN=
+
 Replace placeholders (e.g., <your-mongodb-connection-string>) with your actual values. For example, MONGO_URI might look like mongodb+srv://user:password@cluster0.mongodb.net/dbname.
 
 3. Setup Frontend
@@ -81,6 +94,7 @@ VITE_FIREBASE_STORAGE_BUCKET: Storage bucket URL for file uploads in Firebase.
 VITE_FIREBASE_MESSAGING_SENDER_ID: Sender ID for Firebase Cloud Messaging (push notifications).
 VITE_FIREBASE_APP_ID: App ID for your specific Firebase web app configuration.
 VITE_FIREBASE_MEASUREMENT_ID: Measurement ID for Firebase Analytics tracking.
+
 Replace placeholders (e.g., <your-firebase-api-key>) with your actual values from Firebase and Agora consoles. Ensure all variables are prefixed with VITE_ for Vite compatibility.
 
 4. Run the Application
